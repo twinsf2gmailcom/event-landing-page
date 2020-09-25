@@ -14,13 +14,3 @@
     font-size: larger;
 }
 
-/* .figure-img:hover  {
-    transform: scale(2);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 1;
-} */
-
-.figure-img  {
-    z-index: 0;
-    object-fit: cover;
-}
