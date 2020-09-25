@@ -1,0 +1,16 @@
+.jumbotron {
+    background-image: url('../img/BANNER_L199_IMG_0293_long_400h.jpg');
+    background-size: cover;
+    height: 400px;
+}
+
+.figure-caption, .map-text {
+    font-size: 120%;
+    color: #000;
+}
+
+.navlogo {
+    color: #aca81b;
+    font-size: larger;
+}
+
