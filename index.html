@@ -17,36 +17,112 @@
   <body>
     <header>
       <div class="row">
-        <div class="col-md d-flex justify-content-start">
-          moqups
+        <div class="col-md ml-2 mt-1 d-flex justify-content-start navlogo font-weight-bold">
+          MOBY
         </div>
         <div class="col-md d-flex justify-content-end">
-          <ul class="nav">
+          <ul class="nav navbar-light">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Speakers</a>
+              <a class="nav-link active" href="#">Location</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Tickets</a>
+              <a class="nav-link" href="#">Status</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Venue</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link" href="#">Data</a>
             </li>
           </ul>
         </div>
       </div>
-
-      <div class="jumbotron">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <div class="jumbotron text-center">
+        <h1 class="display-4">Marine Optical BouY</h1>
+        <p class="lead">Provides vicarious calibration of ocean color satellites </p>
         <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <a class="btn btn btn-primary btn-lg" href="#" role="button">What is Ocean Color</a>
       </div>      
     </header>
+    <!-- MAIN--------------------------------------------------- -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <p class="display-4 text-center">MOBY Status Information</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <p class="lead text-center">MOBY is an autonomus optical buoy which is moored off the island of Lanai in Hawaii.</p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col">
+          <figure class="figure">
+            <img src="../img/nlnx2_09_map1.png" class="figure-img img-fluid rounded" alt="MOBY position map">
+            <figcaption class="figure-caption"><u>GPS positions</u></figcaption>
+            <p>All MOBY GPS postions at the watchcircle</p>
+          </figure>          
+        </div>
+        <div class="col">
+          <figure class="figure">
+            <img src="../img/nx_020p08_001.png" class="figure-img img-fluid rounded" alt="MOBY position map">
+            <figcaption class="figure-caption"><u>MOS and linux log battery readings</u></figcaption>
+            <p>4 lower batteries measured from a number of sources</p>
+          </figure>          
+        </div>
+        <div class="col">
+          <figure class="figure">
+            <img src="./img/nx_020p03_001.png" class="figure-img img-fluid rounded" alt="MOBY position map">
+            <figcaption class="figure-caption"><u>Battery Charging</u></figcaption>
+            <p>Which battery is being charged, when MOBY is not acquiring data</p>
+          </figure>          
+        </div>
+        <div class="col">
+          <figure class="figure">
+            <img src="../img/nx_100p00_001.png" class="figure-img img-fluid rounded" alt="MOBY position map">
+            <figcaption class="figure-caption"><u>Start and Stop times for each eventlog</u></figcaption>
+            <p>The start time and length of each event throughout the day </p>
+          </figure>          
+        </div>
+      </div>
+      <hr>
+      <div>
+        <div class="row">
+          <div class="col">
+            <p class="display-4 text-center">Daily graphs in the link below</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="lead text-center mt-4">3 Files downslod today and batery 4 was charged</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <a class="btn btn btn-primary btn-lg" href="#" role="button">Click Here for Daily Files</a>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4 d-flex  align-self-stretch">
+        <div class="col">
+          <p class="map-text">MOBY location</p>
+          <p>13 nautical miles in the lee of Lanai</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1609148.755940607!2d-157.6794347050804!3d20.484825967120774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDQ3JzEyLjkiTiAxNTfCsDE1JzI4LjEiVw!5e0!3m2!1sen!2sus!4v1601011677135!5m2!1sen!2sus" 
+          width="100%" 
+          height="100%" 
+          frameborder="0" 
+          style="border:0;" 
+          allowfullscreen="" 
+          aria-hidden="false" 
+          tabindex="0"></iframe>
+        </div>
+        <div class="col">
+          <img class="border border-dark .img-fluid" src="../img/l199_img_0293_sm.jpg" alt="MOBY and diver at site">
+        </div>
+      </div>
+    </div>
+    
 
+
+ 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
