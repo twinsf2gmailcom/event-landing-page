@@ -5,7 +5,7 @@
 .jumbotron {
     background-image: url('../img/BANNER_L199_IMG_0293_long_400h.jpg');
     background-size: cover;
-    height: 400px;
+    /* height: 300px; */
 }
 
 .figure-caption, .map-text {
@@ -25,4 +25,26 @@
 
 .graygraphs {
     background-color: var(--sfgray);
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 1200px) { 
+    .jumbotron {
+        background-image: url('../img/BANNER_L199_IMG_0293_long_400h_lg.jpg');
+    }  
+ }
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 800px) { 
+    .jumbotron {
+        background-image: url('../img/BANNER_L199_IMG_0293_long_400h_md.jpg');
+    } 
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 500px) { 
+    .jumbotron {
+        background-image: url('../img/BANNER_L199_IMG_0293_long_400h_sm.jpg');
+    } 
 }
