@@ -1,3 +1,7 @@
+:root {
+  --sfgray:  #D3D3D3;
+}
+
 .jumbotron {
     background-image: url('../img/BANNER_L199_IMG_0293_long_400h.jpg');
     background-size: cover;
@@ -17,4 +21,8 @@
 .socialmedia {
     height: 5vh;
     padding: 1vh;
+}
+
+.graygraphs {
+    background-color: var(--sfgray);
 }
