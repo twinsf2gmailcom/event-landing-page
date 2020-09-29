@@ -21,6 +21,8 @@
         <!-- <div class="col-lg ml-2 mt-1 d-flex justify-content-start navlogo font-weight-bold">
           MOBY
         </div> -->
+        <!-- should have used , has the hamburger
+        https://getbootstrap.com/docs/4.5/components/navbar/ -->
         <div class="col-lg d-flex justify-content-end">
           <ul class="nav navbar-light">
             <li class="nav-item dropdown mr-4">
@@ -31,29 +33,28 @@
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">HDF format</a>
               </div>              
-              <!-- <a class="nav-link" href="#">Data</a> -->
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Location</a>
+              <a class="nav-link active" href="#location">Location</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Status</a>
+              <a class="nav-link" href="#status">Status</a>
             </li>
 
           </ul>
         </div>
       </div>
       <div class="jumbotron text-center dflex">
-        <h1 class="display-4">Marine Optical BouY</h1>
-        <p class="lead">Provides vicarious calibration of ocean color satellites </p>
+        <h1 class="display-4 text-lg-center text-left">Marine Optical BouY</h1>
+        <p class="lead text-lg-center text-left ">Provides vicarious calibration of ocean color satellites </p>
         <hr class="my-4">
-        <a class="btn btn btn-primary btn-lg" href="#" role="button">What is Ocean Color</a>
+        <a class="btn btn btn-primary btn-lg  text-lg-center text-left" href="#" role="button">What is Ocean Color</a>
       </div>      
     </header>
     <!-- MAIN------------------------------------------------------------------------ -->
     <div class="container">
       <!-- TEXT INTRO----------------- -->
-      <div class="row">
+      <div class="row" id="status">
         <div class="col-lg">
           <p class="display-4 text-center">MOBY Status Information</p>
         </div>
@@ -96,10 +97,10 @@
           </figure>          
         </div>
       </div>
-      </div>
-      <hr>
+    </div>
+    <hr>
       <!-- More text and a button----------------------- -->
-      <div class="container">
+    <div class="container">
       <div>
         <div class="row">
           <div class="col-lg">
@@ -119,7 +120,7 @@
       </div>
       <hr>
       <!-- --------------------------------------------- -->
-      <div class="row mt-4 d-flex  align-items-end">
+      <div class="row mt-4 d-flex  align-items-end" id="location">
         <div class="col-lg">
           <p class="display-4">MOBY location</p>
           <p class="lead">13 nautical miles in the lee of Lanai</p>

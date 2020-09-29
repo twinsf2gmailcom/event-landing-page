@@ -2,6 +2,12 @@
   --sfgray:  #D3D3D3;
 }
 
+/* https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2 */
+html {
+    scroll-behavior: smooth;
+}
+
+
 .jumbotron {
     background-image: url('../img/BANNER_L199_IMG_0293_long_400h.jpg');
     background-size: cover;
