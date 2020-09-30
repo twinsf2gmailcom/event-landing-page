@@ -1,7 +1,16 @@
+:root {
+  --sfgray:  #D3D3D3;
+}
+
+/* https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2 */
+html {
+    scroll-behavior: smooth;
+}
+
+
 .jumbotron {
     background-image: url('../img/BANNER_L199_IMG_0293_long_400h.jpg');
     background-size: cover;
-    height: 400px;
 }
 
 .figure-caption, .map-text {
@@ -14,3 +23,33 @@
     font-size: larger;
 }
 
+.socialmedia {
+    height: 5vh;
+    padding: 1vh;
+}
+
+.graygraphs {
+    background-color: var(--sfgray);
+}
+
+/* Large devices (desktops, 992px and up) */
+/* @media (max-width: 1200px) { 
+    .jumbotron {
+        background-image: url('../img/BANNER_L199_IMG_0293_long_400h_lg.jpg');
+    }  
+ } */
+
+
+/* Medium devices (tablets, 768px and up) */
+/* @media (max-width: 800px) { 
+    .jumbotron {
+        background-image: url('../img/BANNER_L199_IMG_0293_long_400h_md.jpg');
+    } 
+} */
+
+/* Medium devices (tablets, 768px and up) */
+/* @media (max-width: 500px) { 
+    .jumbotron {
+        background-image: url('../img/BANNER_L199_IMG_0293_long_400h_sm.jpg');
+    } 
+} */

@@ -17,10 +17,12 @@
   <body>
     <!-- HEADER --------------------------------------------------------------------------------- -->
     <header>
-      <div class="row">
-        <div class="col-lg ml-2 mt-1 d-flex justify-content-start navlogo font-weight-bold">
+      <div class="row  container-fluid">
+        <!-- <div class="col-lg ml-2 mt-1 d-flex justify-content-start navlogo font-weight-bold">
           MOBY
-        </div>
+        </div> -->
+        <!-- should have used , has the hamburger
+        https://getbootstrap.com/docs/4.5/components/navbar/ -->
         <div class="col-lg d-flex justify-content-end">
           <ul class="nav navbar-light">
             <li class="nav-item dropdown mr-4">
@@ -31,29 +33,28 @@
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">HDF format</a>
               </div>              
-              <!-- <a class="nav-link" href="#">Data</a> -->
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Location</a>
+              <a class="nav-link active" href="#location">Location</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Status</a>
+              <a class="nav-link" href="#status">Status</a>
             </li>
 
           </ul>
         </div>
       </div>
-      <div class="jumbotron text-center">
-        <h1 class="display-4">Marine Optical BouY</h1>
-        <p class="lead">Provides vicarious calibration of ocean color satellites </p>
+      <div class="jumbotron text-center dflex">
+        <h1 class="display-4 text-lg-center text-left">Marine Optical BouY</h1>
+        <p class="lead text-lg-center text-left ">Provides vicarious calibration of ocean color satellites </p>
         <hr class="my-4">
-        <a class="btn btn btn-primary btn-lg" href="#" role="button">What is Ocean Color</a>
+        <a class="btn btn btn-primary btn-lg  text-lg-center text-left" href="#" role="button">What is Ocean Color</a>
       </div>      
     </header>
     <!-- MAIN------------------------------------------------------------------------ -->
     <div class="container">
       <!-- TEXT INTRO----------------- -->
-      <div class="row">
+      <div class="row" id="status">
         <div class="col-lg">
           <p class="display-4 text-center">MOBY Status Information</p>
         </div>
@@ -63,39 +64,43 @@
           <p class="lead text-center">MOBY is an autonomus optical buoy which is moored off the island of Lanai in Hawaii.</p>
         </div>
       </div>
+    </div>
+    <div class="container-fluid">
       <!-- 4 graphs with text----------------- -->
-      <div class="row mt-3">
-        <div class="col-lg">
+      <div class="row mt-3 graygraphs pt-3 d-flex align-items-center">
+        <div class="col-xl-3 col-sm-6">
           <figure class="figure">
-            <img src="../img/nlnx2_09_map1.png" class="figure-img img-fluid rounded" alt="MOBY position map">
+            <img src="./img/nlnx2_09_map1.png" class="figure-img img-fluid rounded" alt="MOBY position map">
             <figcaption class="figure-caption"><u>GPS positions</u></figcaption>
             <p>All MOBY GPS postions at the watchcircle</p>
           </figure>          
         </div>
-        <div class="col-lg">
+        <div class="col-xl-3 col-sm-6">
           <figure class="figure">
-            <img src="../img/nx_020p08_001.png" class="figure-img img-fluid rounded" alt="MOBY battery readings">
+            <img src="./img/nx_020p08_001.png" class="figure-img img-fluid rounded" alt="MOBY battery readings">
             <figcaption class="figure-caption"><u>MOS and linux log battery readings</u></figcaption>
             <p>4 lower batteries measured from a number of sources</p>
           </figure>          
         </div>
-        <div class="col-lg">
+        <div class="col-xl-3 col-sm-6">
           <figure class="figure">
             <img src="./img/nx_020p03_001.png" class="figure-img img-fluid rounded" alt="Which Battery is charging">
             <figcaption class="figure-caption"><u>Battery Charging</u></figcaption>
             <p>Which battery is being charged, when MOBY is not acquiring data</p>
           </figure>          
         </div>
-        <div class="col-lg">
+        <div class="col-xl-3 col-sm-6">
           <figure class="figure">
-            <img src="../img/nx_100p00_001.png" class="figure-img img-fluid rounded" alt="Start times and length of each event log">
+            <img src="./img/nx_100p00_001.png" class="figure-img img-fluid rounded" alt="Start times and length of each event log">
             <figcaption class="figure-caption"><u>Start and Stop times for each eventlog</u></figcaption>
             <p>The start time and length of each event throughout the day </p>
           </figure>          
         </div>
       </div>
-      <hr>
+    </div>
+    <hr>
       <!-- More text and a button----------------------- -->
+    <div class="container">
       <div>
         <div class="row">
           <div class="col-lg">
@@ -115,7 +120,7 @@
       </div>
       <hr>
       <!-- --------------------------------------------- -->
-      <div class="row mt-4 d-flex  align-items-end">
+      <div class="row mt-4 d-flex  align-items-end" id="location">
         <div class="col-lg">
           <p class="display-4">MOBY location</p>
           <p class="lead">13 nautical miles in the lee of Lanai</p>
@@ -136,12 +141,22 @@
           tabindex="0"></iframe>
         </div>
         <div class="col-lg">
-          <img class="border border-dark .img-fluid" src="../img/l199_img_0293_sm.jpg" alt="MOBY and diver at site">
+          <img class="border border-dark .img-fluid" src="./img/l199_img_0293_sm.jpg" alt="MOBY and diver at site">
         </div>
       </div>      
     </div>
-    <footer>
-      
+    <!-- FOOTER ---------------------------------------------------------------------------- -->
+    <footer class="min-vh-10 container-fluid">
+      <div class="row mt-4 ml-4 min-vh-10 ">
+        <div class="col-lg">
+					<img class="socialmedia" src="fonts/facebook-f-brands.svg" alt="Facebook">
+					<img class="socialmedia" src="fonts/hashtag-solid.svg" alt="hashtag">
+					<img class="socialmedia" src="fonts/twitter-brands.svg" alt="Twitter">
+        </div>
+        <div class="col-lg text-right mr-4 ">
+          <p class="text-muted">&#169; 2020 MLML MOBY</p>
+        </div>
+      </div>
     </footer> 
 
     <!-- Optional JavaScript -->
